@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Sanvi ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root {
+  --pink: #f6a9c7;
+  --deep: #c64d83;
+  --pale: #fff1f6;
+  --ink: #78445a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  background: linear-gradient(140deg,#fff5f8,#ffe0ed,#fff1f6);
+  overflow-x: hidden;
+}
+button, input { font: inherit; }
+button { cursor: pointer; }
+.hidden { display: none !important; }
+#gate {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+}
+.gate-card {
+  max-width: 440px;
+  width: 100%;
+  padding: 38px 26px;
+  text-align: center;
+  background: rgba(255,255,255,.78);
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: 0 20px 70px #d56e9820;
+}
+.bow { font-size: 44px; }
+h1, h2 { font-family: 'Playfair Display',serif; }
+.script {
+  font-family: 'Great Vibes',cursive;
+  color: var(--deep);
+}
+.gate-card h1 { font-size: 36px; margin: 10px 0; }
+.gate-card p { line-height: 1.7; }
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: 1px solid #f0bad0;
+  border-radius: 14px;
+  background: white;
+  text-align: center;
+  outline-color: var(--deep);
+}
+.btn {
+  border: 0;
+  padding: 13px 22px;
+  border-radius: 999px;
+  color: white;
+  background: linear-gradient(110deg,#ee91b7,#d85b91);
+  box-shadow: 0 8px 20px #d85b9130;
+  transition: transform .2s;
+}
+.btn:hover { transform: translateY(-2px); }
+.error { color: #b72e62; min-height: 22px; font-size: 14px; }
+#surprise { max-width: 850px; margin: auto; padding: 24px 18px 60px; }
+.hero { text-align: center; padding: 45px 10px 30px; }
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: #bd6488;
+}
+.hero h1 { font-size: clamp(42px,9vw,76px); margin: 16px 0; }
+.hero p { line-height: 1.8; }
+.pill {
+  display: inline-block;
+  background: #ffffffa8;
+  border: 1px solid white;
+  border-radius: 999px;
+  padding: 9px 15px;
+  font-size: 13px;
+}
+.section { margin: 25px 0; }
+.section-title { text-align: center; font-size: 30px; }
+.section-sub { text-align: center; line-height: 1.7; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+.polaroid {
+  background: white;
+  padding: 9px 9px 16px;
+  border-radius: 5px;
+  box-shadow: 0 8px 25px #a64d7020;
+  transform: rotate(-1deg);
+}
+.polaroid:nth-child(even) { transform: rotate(1.5deg); }
+.polaroid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/4.5;
+  object-fit: cover;
+  background: #ffe4ef;
+}
+.caption {
+  text-align: center;
+  padding-top: 12px;
+  font-family: 'Great Vibes',cursive;
+  font-size: 25px;
+}
+.letter {
+  margin-top: 22px;
+  background: #fffaf7;
+  border: 1px solid white;
+  border-radius: 22px;
+  padding: clamp(22px,5vw,42px);
+  box-shadow: 0 12px 35px #a64d7012;
+  line-height: 2;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.letter-sign {
+  text-align: right;
+  font-family: 'Great Vibes',cursive;
+  font-size: 30px;
+  color: var(--deep);
+  margin-top: 22px;
+}
+.music {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.music-note { animation: bounce 1.2s infinite alternate; }
+@keyframes bounce { to { transform: translateY(-5px); } }
+.final-card {
+  text-align: center;
+  background: #ffffffa8;
+  border-radius: 26px;
+  padding: 30px 20px;
+  margin-top: 35px;
+}
+.heart { position: fixed; pointer-events: none; z-index: 5;
+  animation: floatUp 5s linear forwards; }
+@keyframes floatUp {
+  from { transform: translateY(0); opacity: .9; }
+  to { transform: translateY(-110vh) rotate(25deg); opacity: 0; }
+}
+footer { text-align: center; padding: 20px; font-size: 12px; opacity: .7; }
+@media(max-width:430px) {
+  .gallery { gap: 10px; }
+  .caption { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+
+<section id="gate">
+  <div class="gate-card">
+    <div class="bow">🎀</div>
+    <p class="eyebrow">a tiny surprise, just for you</p>
+    <h1 class="script">Hey, Sanvi ♡</h1>
+    <p>Someone has made a little corner of the internet just for you.</p>
+    <p>💌 Enter your special secret code to open it.</p>
+    <form id="passForm">
+      <input id="passcode" type="password" placeholder="Your secret code ♡"
+        autocomplete="off" required aria-label="Secret code">
+      <button class="btn" type="submit">Unlock my surprise ♡</button>
+    </form>
+    <div id="error" class="error" aria-live="polite"></div>
+    <p style="font-size:12px">made with love & a little bit of pink ✨</p>
+  </div>
+</section>
+
+<main id="surprise" class="hidden">
+  <header class="hero">
+    <span class="pill">🎂 23 OCTOBER 2026 · YOUR DAY</span>
+    <p class="script" style="font-size:35px;margin-bottom:0">Happy Birthday</p>
+    <h1>Sanvi <span style="color:#e779a5">♡</span></h1>
+    <p>To my favourite person,<br>
+      I made this little world just to celebrate you.</p>
+    <div class="music">
+      <span class="music-note">🎵</span>
+      <button class="btn" id="musicBtn" type="button">Play our song ♡</button>
+      <span id="musicStatus" style="font-size:12px">a little melody for you</span>
+    </div>
+    <audio id="song" loop preload="none">
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </header>
+
+  <section class="section">
+    <p class="eyebrow" style="text-align:center">little moments, big feelings</p>
+    <h2 class="section-title">Our tiny gallery 📸</h2>
+    <p class="section-sub">Four little memories that mean so much to me.</p>
+    <div class="gallery">
+      <div class="polaroid">
+        <img src="photo1.jpg" alt="Our first memory">
+        <div class="caption">my favourite memory ♡</div>
+      </div>
+      <div class="polaroid">
+        <img src="photo2.jpg" alt="A happy moment together">
+        <div class="caption">your beautiful smile 🎀</div>
+      </div>
+      <div class="polaroid">
+        <img src="photo3.jpg" alt="A special moment">
+        <div class="caption">us being us ✨</div>
+      </div>
+      <div class="polaroid">
+        <img src="photo4.jpg" alt="A memory to keep">
+        <div class="caption">one for the memories 💗</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow" style="text-align:center">from my heart to yours</p>
+    <h2 class="section-title">A little letter for you 💌</h2>
+    <article class="letter" id="letterText">My dearest Sanvi,
+
+Happy Birthday, meri favourite person! 💗
+
+Sanvi ik pichle 3 mahine mai hm dono ke sath jo jo hua hai especially tumhare sath us wajah se hm dono poore tut chuke hain ... hm dono ab wahi same sanvi suryansh 
+nhi hain jo pehle hua krte the... sanvi tumhari bahut yaad aati hai yrr kasam se...hamare voh sare pal...sari khushiya ek sath ki.. sab bahut yaad hai yaar..🙂 hm 
+dono is waqt rs mai to nhi hain par hm dono ki feelings abhi bhi same haina... sanvi mere sath hamesha rehna yrr...plzz tum mujhse dur mat jaana..🙂..
+"SAB CHHAD JAYE TU NA MAINU CHODHNA 🙂"... sanvi bahut attach hogya hoon yr tmse... plz hamesha mere sath rehna... sanvi tmhi meri motivation ho yrr sab kuch krne ki ..
+tum mere sath rhogi mera sath dogi to mai sab kuch karlunga sanvi promise... mai apna pyaar nhi smjha paunga sanvi... you will be and always be my Sona❤💖...
+aaj tumhara poora mood kharab hai sanvi ... par hmlog kya kar skte the sanvi ... huddles bata ke thodi na aate hain sanvi ... please hmlogo ko maaf kardo sanvi plzz...
+request kr rha sanvi... Aunty ko bhi mere trf se sorry boldena unki beti ko rulane ke liye🙂Hmlogo ka bhi mann tha sanvi bahut sath mai bday manane ka par uk na... 
+har cheez jo hm chahte voh hona itna aasan nhi hota... aaj nhi mana paaye ... kisi aur din mana lenge sanvi... plzz tm dukhi mat ho sanvi... plzz mere liye ...
+
+Ab kuch purani baatein bhi yaad krlete hain meri best friend 🤗❤💟💗
+aaj hi ke din 3 saal pehle hm pehli baar baat kiye the naa... "Happy birthday"..."Thank you"..."tumhare yaha bhi kanya khilaya jaata?"..."Haan"...💖💖
+I am in tears sanvi voh pal yaad krke that was the best decision of my lifee yawwrr ❤❤... i miss those days sanvii😭😭....Sanvi tum kyun us din insta hide nhi ki thi
+yaarr kyunn...mai kehta tha sanvi hide krlo 🙂...khair ab jo hogya hm use change nhi kar sktee... sanvi uk na pichle kuch dino mai hamare beech bhi bahut ladai hui hai 
+tumhare behaviour ko leke ... sanvi ik tm itna jhel chuki ho ki ab tmko yeh time hi accha lagega ...par sanvi hm 1.5 saal baad wapas aayenge na? promise kroo mujhse
+hmare pyaar ki kasam khao...mai nhi reh paunga sanvi tumhare bina yrr ... sach bata rhaa..
+
+Sanvi jab bhi tm mujhse gussa ho na to yaar plzz mujhe bata diya karo ... mai sab theek kardunga sanvii tumhari kasam yrr... tum mujhse baat nhi karti to mujhe bahut 
+adhura adhura feel hota hai yrrr..kal se hamari baat nhi hui to aaj poora din mai bas tmhare baare mai hi soch rha tha ki yar kaisi hogi tum...ik sanvi tmko bahut bura 
+laga hai par ab to hogya na yrr jo hona tha ...isme hmlog ki kya galti haii...baki jo cheeze hain..unme to hai shaurya vaibhav ki galti unse gussa rho tm...par mujhse 
+aur vanya se mat rho yrr plzz sanvii...🙂....Sanvi I love you yrr
+
+Happy Birthday once again, Sanvi. 🎀
+
+With lots of love,
+Suryansh ♡</article>
+    <div class="letter-sign">Always cheering for you, Suryansh ♡</div>
+  </section>
+
+  <section class="final-card">
+    <div style="font-size:38px">🎂 💗 🎀</div>
+    <h2 class="script" style="font-size:42px;margin:12px">You deserve the world.</h2>
+    <p>May your day be as lovely as the happiness you bring to others.</p>
+    <button class="btn" id="heartsBtn" type="button">Send you a thousand hearts ♡</button>
+    <p style="margin-top:20px">Made especially for you, Sanvi.<br>— Suryansh</p>
+  </section>
+  <footer>one little website, a million little wishes ♡</footer>
+</main>
+
+<script>
+/*
+  SIMPLE DEMO LOCK ONLY.
+  This passcode is visible to anyone who inspects the page source.
+  It is NOT strong privacy protection for sensitive content.
+*/
+const SECRET_CODE = "100724";
+
+const gate = document.getElementById("gate");
+const surprise = document.getElementById("surprise");
+const passForm = document.getElementById("passForm");
+const passcode = document.getElementById("passcode");
+const errorBox = document.getElementById("error");
+
+passForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+  if (passcode.value === SECRET_CODE) {
+    gate.classList.add("hidden");
+    surprise.classList.remove("hidden");
+    window.scrollTo(0, 0);
+    makeHearts(12);
+  } else {
+    errorBox.textContent = "Oops, that's not the right code. Try again, cutie! 💗";
+    passcode.value = "";
+    passcode.focus();
+  }
+});
+
+const song = document.getElementById("song");
+const musicBtn = document.getElementById("musicBtn");
+const musicStatus = document.getElementById("musicStatus");
+
+musicBtn.addEventListener("click", async function() {
+  if (song.paused) {
+    try {
+      await song.play();
+      musicBtn.textContent = "Pause our song ♡";
+      musicStatus.textContent = "playing just for you 🎶";
+    } catch (error) {
+      musicStatus.textContent = "Add music.mp3 to the website folder first 💗";
+    }
+  } else {
+    song.pause();
+    musicBtn.textContent = "Play our song ♡";
+    musicStatus.textContent = "paused for now";
+  }
+});
+
+function makeHearts(count) {
+  const symbols = ["♡","♥","💕","💗","🎀","✨"];
+  for (let i = 0; i < count; i++) {
+    const heart = document.createElement("span");
+    heart.className = "heart";
+    heart.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.bottom = "-30px";
+    heart.style.fontSize = (18 + Math.random() * 22) + "px";
+    heart.style.animationDelay = (Math.random() * 1.5) + "s";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 7000);
+  }
+}
+
+document.getElementById("heartsBtn").addEventListener("click", () => makeHearts(35));
+</script>
+</body>
+</html>
